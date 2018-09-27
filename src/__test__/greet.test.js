@@ -27,12 +27,15 @@ describe('greet.test.js', () => {
     test('Should return Hello, NAME', () => {
       expect(greet.hi('Billie')).toEqual('Hello, Billie!');
     });
-    test('Should return -1 in case of error', () => {
-      expect(greet.hi('')).toEqual(-1);
-      expect(greet.hi()).toEqual(-1);
-    });
+    // test('Should return -1 in case of error', () => {
+    //   expect(greet.hi('')).toEqual(-1);
+    //   expect(greet.hi()).toEqual(-1);
+    // });
     test('Should return Best Doge', () => {
       expect(greet.hi('Billie')).toEqual('Best Doge');
+    });
+    test('Should return null when non-string value', () => {
+      expect(greet.hi('')).toBeNull();
     });
     describe('greet.bye', () => {
       test('Should return Bye, NAME', () => {

@@ -4,7 +4,7 @@ const greet = module.exports = {};
 
 greet.hi = (name) => {
   if (name === '' || typeof name !== 'string') {
-    return -1;
+    return null;
   }
 
   // this code is not tested at the moment
