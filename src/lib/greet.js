@@ -9,10 +9,9 @@ greet.hi = (name) => {
 
   // this code is not tested at the moment
   if (name === 'Billie') {
-    return 'Best Doge';
+    return `Hello, ${name}!`;    
   }
-
-  return `Hello, ${name}!`;
+  return 'Best Doge';
 };
 
 greet.bye = (name) => {
